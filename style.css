@@ -1,6 +1,79 @@
-body{
-    background-color: aqua;
-}
-h1{
-    color: red;
-}
+        
+        *{
+            box-sizing: border-box;
+           
+        }
+        nav{
+            background-color: grey;
+            padding: 15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a{
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover{
+            background-color: teal;
+            border-radius: 20px;
+        }
+        @media screen and (max-width:600px) {
+            nav {
+                flex-direction: column;
+                padding: 10px;
+                
+            }
+            nav a{
+                background-color: indigo;
+                margin: 5px 0;
+                padding: 10px;
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                text-align: center;
+
+            }
+            
+        }
+
+
+        .column {
+            width: 25%;
+            float: left;
+
+            padding: 10px;
+
+        }
+
+
+
+
+        @media screen and (max-width:800px) {
+
+            .column {
+                width: 50%;
+                float: left;
+
+                padding: 10px;
+
+            }
+
+
+        }
+
+        @media screen and (max-width:600px) {
+
+            .column {
+                width: 100%;
+                float: left;
+
+                padding: 10px;
+
+            }
+
+
+        }
+        nav h1{
+            float: left;
+        }
